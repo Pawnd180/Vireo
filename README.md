@@ -63,3 +63,14 @@ takes roughly 15–25 minutes because it moves about 3 GB.
   before publishing.
 - The bundled soundfonts are CC0 1.0, except the MuldjordKit drums which are
   CC BY 4.0. See `LICENSE-soundfonts.md`.
+
+## Support Vireo
+
+Vireo is free, with no trial, no watermark and no account. If it is useful to you, you
+can support development on Patreon:
+
+**https://www.patreon.com/17113902/join**
+
+Donations pay for the soundfont library, the Windows machines builds are tested on, and
+the time that goes into each update. It is optional and you can cancel any time; the app
+keeps working either way.
