@@ -1,2 +1,2 @@
-bb842867faf3cb9eb3957fc1f1a31b22c3e725faa5229e52763ee0193a6217c3  Vireo-Setup.exe
+43c3a8551f81deeddb94b0ac6f090590b5d7ba06b9acc2f7582c1caa8b696aa4  Vireo-Setup.exe
 61379a41beb8e10a6fc1e7b2e4225fc03a49f1385fe90a028d75f8ab18d31694  Vireo-Instruments.zip

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build Vireo's GitHub release artifacts.
 
-    py github/build_release.py --repo your-name/vireo
+    py github/build_release.py --repo Pawnd180/Vireo
 
 Outputs in github/:
     Vireo-Setup.exe        self-contained installer (app bundled)
@@ -112,7 +112,7 @@ def checksums(paths):
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build GitHub release artifacts.")
-    parser.add_argument("--repo", default="your-name/vireo")
+    parser.add_argument("--repo", default="Pawnd180/Vireo")
     parser.add_argument("--version", default="1.0.0")
     parser.add_argument("--skip-app", action="store_true")
     parser.add_argument("--skip-instruments", action="store_true")

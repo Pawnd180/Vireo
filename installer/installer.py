@@ -24,7 +24,7 @@ from pathlib import Path
 APP_NAME = "Vireo"
 APP_VERSION = "1.0.0"
 ASSET_NAME = "Vireo-Instruments.zip"
-DEFAULT_REPO = "your-name/vireo"
+DEFAULT_REPO = "Pawnd180/Vireo"
 FROZEN = bool(getattr(sys, "frozen", False))
 HERE = Path(sys.executable).resolve().parent if FROZEN else Path(__file__).resolve().parent
 BUNDLE = Path(getattr(sys, "_MEIPASS", HERE))
@@ -57,6 +57,7 @@ def read_repo() -> str:
                 key, _, value = line.partition("=")
                 if key.strip().lower() == "repo" and value.strip():
                     repo = value.strip()
+            break
         except OSError:
             continue
     return repo

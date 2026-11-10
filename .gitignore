@@ -2,3 +2,4 @@ payload/
 *.zip
 Vireo-Setup.exe
 vireo-setup.log
+__pycache__/
