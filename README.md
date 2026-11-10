@@ -17,38 +17,6 @@ This folder holds everything needed to publish Vireo on GitHub.
 
 The setup executable is unsigned, so Windows SmartScreen may show
 **“Windows protected your PC”**. Choose **More info → Run anyway**.
-
-## Publishing on GitHub
-
-The app is 25 MB but the instrument pack is 1.6 GB unpacked, so the two files
-belong on a **Release**, not in the repository.
-
-1. Create a repository and push the source (see “Building from source”).
-2. Create a release tagged `v1.0.0`.
-3. Attach `Vireo-Setup.exe`, `Vireo-Instruments.zip` and `SHA256SUMS.txt`
-   as release assets.
-4. Put the release notes from `RELEASE_NOTES.md` into the release description.
-
-Before publishing, set your repository in `Vireo-Setup.ini`:
-
-```ini
-[vireo]
-repo=Pawnd180/Vireo
-version=1.0.0
-```
-
-Keep that file next to `Vireo-Setup.exe` when you upload it, or rebuild the
-setup with the repo baked in:
-
-```bash
-py github/build_release.py --repo Pawnd180/Vireo
-```
-
-The installer builds the download URL as
-`https://github.com/<repo>/releases/latest/download/Vireo-Instruments.zip`.
-If the download fails, it asks for the ZIP file instead, so the setup still
-works offline when both files are downloaded into the same folder.
-
 ## Installing
 
 1. Download `Vireo-Setup.exe` and `Vireo-Instruments.zip` into one folder.
